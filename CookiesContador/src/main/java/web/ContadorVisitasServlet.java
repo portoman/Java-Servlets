@@ -28,7 +28,7 @@ public class ContadorVisitasServlet extends HttpServlet {
         //Agregamos la respuesta al navegador
         Cookie c = new Cookie("contadorVisitas", Integer.toString(contador));
 
-        //La cookie almacenara en el cliente por 1 hora (3600seg)
+        //La cookie almacenará en el cliente por 1 hora (3600seg)
         c.setMaxAge(3600);
         response.addCookie(c);
 
